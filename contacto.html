@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace referncia  para quitar el css del navegador el reset.css-->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="StylePoductos.css">
+    <title>Contacto</title>
+</head>
+<body class="contactar">
+    <!--Encabezado de pagina-->
+    <header>
+        <div class="caja">
+            <h1>
+                <img src="imagenes/imagenes/logo-blanco.png" alt="Logo de la Barberia Alura">
+                <nav>
+                    <ul class="navegacion">
+                        <!-- etiqueta a nos permite hacer referencia a un vinculo ó podemos hacer 
+                        referencias a otras paginas como google etc-->
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pructos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contactos</a></li>
+                    </ul>
+                </nav>
+            </h1>
+        </div>
+        
+    </header>
+    <main class="contactanos">
+        <form  action="">
+            <label for="nombreApellido">Nombre y Apellido</label>
+            <input type="text" id="nombreApellido" class="input-padron" required placeholder="Name">
+
+            <label for="correoElectronico">Correo-Electronico</label>
+            <input type="email" id="correoElectronico" class="input-padron" required placeholder="email@dominio.com">
+
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(+xxx xxxxxxxx)">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea name="" id="mensaje" cols="93" rows="10"  required></textarea >
+
+            <fieldset>
+                <legend>¿Cómo le Gustaria ser contactado?</legend>
+
+                <label for="radio-email"> 
+                    <input name="contacto" type="radio" value="email" id="radio-email">
+                    email
+                </label>
+                
+                <label for="radio-telefono">
+                    <input name="contacto" type="radio" value="Telefono" id="radio-telefono">
+                    Telefono
+                </label>
+                
+                <label for="radio-whatsapp">
+                    <input name="contacto" type="radio" value="WhatsApp" id="radio-whatsapp" checked>
+                     WhatsApp
+                </label>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>En que horario desea ser atendido</legend>
+                <select name="" id="">
+                    <option value="">Mañana</option>
+                    <option value="">Tarde</option>
+                    <option value="">Noche</option>
+                </select>
+            </fieldset>
+            
+            <label for="" class="checkbox"><input type="checkbox"  checked>Le gustaria recibir novedades al correo</label>
+            
+            <input type="submit" value="Enviar Formulario" id="enviar" class="enviar">
+        </form>
+        <table class="horarios">
+            <thead>
+                <th>Día</th>
+                <th>horario</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lunes</td>
+                    <td>7:00 am - 9:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Miercoles</td>
+                    <td>7:00 am - 9:00 pm</td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td>9:00 am - 5:00 pm</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <img src="imagenes/imagenes/logo-blanco.png" alt="Logo de la Barberia Alura">
+        <p class="derechosAutor">&copy Copyright Barberia Alura-2023</p>
+    </footer>
